@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    width: 100%;
+    width: fit-content;
     max-width: 18em;
     padding: 0.5em;
     display: flex;
@@ -20,7 +20,7 @@ img.card {
 img.card:hover,
 img.card:focus {
     transform: scale(1.1);
-    opacity: .6;
+    opacity: .5;
     cursor: pointer;
 }
 

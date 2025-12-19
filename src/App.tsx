@@ -12,10 +12,10 @@ function App() {
       <div className='card-wrapper'>
           <div className='card-grid'>
         <Card 
-        imageSrc='/images/ArcheryOddesy.png'
+        imageSrc='/images/wakefield.png'
         link=''
-        gameTitle='Odyssey Of Archery'
-        iframeSrc='odessey-of-archery.html'
+        gameTitle='WakeField'
+        iframeSrc='wakefield.html'
         />
         <Card
         imageSrc='/images/ArcheryOddesy.png'
