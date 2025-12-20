@@ -58,3 +58,54 @@ hr {
   width: 80em;
   margin: 8px auto;
 }
+.skillsGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 0 8px;
+}
+
+.skillCard{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 18px 18px 14px;
+}
+
+.skillCard h3{
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #31d3c6; /* your teal */
+}
+
+.chips{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.chip{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(49,211,198,0.35);
+  font-size: 14px;
+}
+
+.usedIn{
+  margin: 12px 0 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+@media (max-width: 800px){
+  .skillsGrid{ grid-template-columns: 1fr; }
+}
+

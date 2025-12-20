@@ -20,11 +20,11 @@ const GameModal: React.FC<GameModalProps> = ({isOpen, onClose, gameTitle, gameIf
           const scrollHeight = iframe.contentDocument.body.scrollHeight;
           const viewportWidth = window.innerWidth; // 100vw in pixels
           if (scrollHeight > viewportWidth) {
-            iframe.style.height = '100vw';
+            iframe.style.height = '1000px';
           } else {
             iframe.style.height = `${scrollHeight}px`;
           }
-          iframe.style.height= '20vw';
+          //iframe.style.height= '500px';
         }
     };
 
@@ -45,6 +45,7 @@ const GameModal: React.FC<GameModalProps> = ({isOpen, onClose, gameTitle, gameIf
             src={gameIframeSrc}
             className="game-iframe"
             width="100%"
+            height="100%"
             style={{ border: 'none' }}
             onLoad={handleLoad}></iframe>
           </div>
